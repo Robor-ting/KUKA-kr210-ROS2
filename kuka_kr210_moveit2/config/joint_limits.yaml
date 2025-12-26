@@ -1,0 +1,51 @@
+#joint limits for kuka kr210 ros2_control 
+default_velocity_scaling_factor: 0.1
+default_acceleration_scaling_factor: 0.1
+
+joint_limits:
+  joint_1:
+    has_velocity_limits: true
+    max_velocity: 2.0384  # KR210 R2700-2 官方限制 (rad/s)
+    has_acceleration_limits: true
+    max_acceleration: 1.98271
+    has_jerk: false
+  joint_2:
+    has_velocity_limits: true
+    max_velocity: 1.9451
+    has_acceleration_limits: true
+    max_acceleration: 1.26288
+    has_jerk: false
+  joint_3:
+    has_velocity_limits: true
+    max_velocity: 1.95476
+    has_acceleration_limits: true
+    max_acceleration: 2.56508
+    has_jerk: false
+  joint_4:
+    has_velocity_limits: true
+    max_velocity: 3.12413
+    has_acceleration_limits: true
+    max_acceleration: 7.03857
+    has_jerk: false
+  joint_5:
+    has_velocity_limits: true
+    max_velocity: 3.00196
+    has_acceleration_limits: true
+    max_acceleration: 1.76397
+    has_jerk: false
+  joint_6:
+    has_velocity_limits: true
+    max_velocity: 3.83972
+    has_acceleration_limits: true
+    max_acceleration: 1.87268
+    has_jerk: false
+  left_gripper:
+    has_velocity_limits: true
+    max_velocity: 1.0
+    has_acceleration_limits: false
+    max_acceleration: 0.0
+  right_gripper:
+    has_velocity_limits: true
+    max_velocity: 1.0
+    has_acceleration_limits: false
+    max_acceleration: 0.0
